@@ -33,22 +33,13 @@ src/
 └── style.css                   # All styling, CSS variables for theming
 ```
 
-## Getting Started
 
-```bash
-npm install
-npm run dev
-```
+##  Running the Project
 
-Then open the local URL shown in the terminal (usually `http://localhost:5173`).
-
-## Build for Production
-
-```bash
-npm run build
-```
-
-Outputs a production-ready `dist/` folder.
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Run development server: `npm run dev`
+4. Open `http://localhost:5173` in your browser
 
 ## Data Source
 
