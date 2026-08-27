@@ -224,9 +224,9 @@ function renderAboutView() {
           <a href="https://www.attackontitanapi.com" target="_blank">Attack on Titan API</a>,
           a free community-maintained resource.
         </p>
-        <a href="https://github.com/YOUR-USERNAME" target="_blank" class="github-link">
-          View on GitHub 
-        </a>
+      <a href="https://github.com/omarmahhmoud2233-ship-it/AOT-site" target="_blank" class="github-link">
+  View on GitHub
+</a>
       </section>
 
       <section class="copyright-notice">
