@@ -65,3 +65,6 @@ generated from this project.
 
 The source code in this repository is licensed under the MIT License (see [LICENSE](./LICENSE)).
 This license covers the code only — not the Attack on Titan characters, artwork, or story content.
+
+
+## Check out the website ( https://aot-site-33ha.vercel.app/ )
