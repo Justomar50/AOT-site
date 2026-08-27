@@ -1,4 +1,6 @@
+
 # Attack on Titan Site
+![attack on titan ](docs/aot.png)
 
 A learning project built with **Vanilla TypeScript + Vite** to explore frontend fundamentals: DOM manipulation, async data fetching, TypeScript typing, and CSS layout techniques — no frameworks involved.
 
@@ -63,4 +65,3 @@ generated from this project.
 
 The source code in this repository is licensed under the MIT License (see [LICENSE](./LICENSE)).
 This license covers the code only — not the Attack on Titan characters, artwork, or story content.
-![attack on titan ](./docs/aot.png)
