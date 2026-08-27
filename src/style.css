@@ -21,6 +21,10 @@ body {
   align-items: center;
   padding: 16px 24px;
   border-bottom: 2px solid var(--text-primary);
+  position: sticky;
+  top: 0;
+  background-color: var(--bg-color);
+  z-index: 100;
 }
 
 .navbar-brand {
@@ -32,6 +36,7 @@ body {
   font-family: "UnifrakturMaguntia", cursive;
   font-size: 1.8rem;
   color: var(--text-primary);
+  cursor: pointer;
 }
 
 .nav-buttons {
@@ -58,7 +63,7 @@ body {
 }
 
 .nav-buttons button.active {
-  background-color: var(--glow-color);
+  background-color: var(--accent-green);
   color: #fff;
 }
 .spinner {
@@ -158,10 +163,150 @@ body {
   justify-content: center;
 }
 body {
-  background-image: url("./aot-back.png");
+  
+  /* background-image: url("./aot-back.png"); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   min-height: 100vh;
+}
+.about-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 24px;
+  color: var(--text-primary);
+  line-height: 1.7;
+}
+
+.seasons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 16px;
+  margin: 16px 0;
+}
+
+.season-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+}
+
+.github-link {
+  display: inline-block;
+  background-color: var(--glow-color);
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  margin: 8px 0;
+   color: #fff !important;
+   font-weight: bold;
+}
+
+.copyright-notice {
+  font-size: 0.85rem;
+  opacity: 0.7;
+  margin-top: 32px;
+  border-top: 1px solid var(--border-color);
+  padding-top: 16px;
+}
+.episodes-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+.season-title {
+  color: var(--text-primary);
+  border-bottom: 2px solid var(--glow-color);
+  padding-bottom: 8px;
+  margin-top: 32px;
+}
+
+.episode-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.episode-row:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.episode-thumbnail {
+  width: 120px;
+  height: 68px;
+  object-fit: cover;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.episode-info h4 {
+  color: var(--text-primary);
+  margin: 0;
+  font-size: 0.95rem;
+}
+.season-tabs {
+  margin: 24px auto;
+  width: fit-content;
+}
+.about-section {
+  margin-bottom: 32px;
+}
+
+.about-section h2 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+}
+
+.about-section h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+}
+
+.about-section p {
+  font-family: sans-serif;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--text-primary);
+  opacity: 0.9;
+}
+
+.about-section a {
+  color: var(--glow-color);
+   color: #fff !important;
+}
+
+.copyright-notice {
+  border-top: 1px solid var(--border-color);
+  padding-top: 20px;
+  margin-top: 32px;
+}
+
+.copyright-notice h4 {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.copyright-notice p {
+  font-family: sans-serif;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  opacity: 0.65;
 }
