@@ -156,7 +156,7 @@ function buildEpisodesUI(episodes: Episode[]) {
   }
 }
 
-function showSeasonEpisodes(seasonCode: string, episodes: Episode[]) {
+function showSeasonEpisodes(_seasonCode: string, episodes: Episode[]) {
   const episodesList = document.getElementById("episodes-list");
   if (!episodesList) {
     return;
