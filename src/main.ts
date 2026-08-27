@@ -116,7 +116,16 @@ function renderTitansView() {
 const charactersBtn = document.getElementById("characters-btn");
 const titansBtn = document.getElementById("titans-btn");
 
-charactersBtn?.addEventListener("click", renderCharactersView);
-titansBtn?.addEventListener("click", renderTitansView);
+charactersBtn?.addEventListener("click", () => {
+  renderCharactersView();
+  charactersBtn.classList.add("active");
+  titansBtn?.classList.remove("active");
+});
+charactersBtn?.classList.add("active");
 
+titansBtn?.addEventListener("click", () => {
+  renderTitansView();
+  titansBtn.classList.add("active");
+  charactersBtn?.classList.remove("active");
+});
 renderCharactersView();

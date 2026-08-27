@@ -15,10 +15,6 @@ body {
   color: var(--text-primary);
   margin: 0;
 }
-.nav-buttons {
- display: flex;
-  gap: 16px;
-}
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -38,19 +34,32 @@ body {
   color: var(--text-primary);
 }
 
-.nav-buttons button {
+.nav-buttons {
+  display: flex;
   background-color: var(--card-bg);
+  border-radius: 999px;
+  padding: 6px;
+  gap: 4px;
+}
+
+.nav-buttons button {
+  background-color: transparent;
   color: var(--text-primary);
-  border: 2px solid var(--glow-color);
-  border-radius: 8px;
-  padding: 8px 24px;
+  border: none;
+  border-radius: 999px;
+  padding: 10px 24px;
   font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.2s ease;
 }
 
 .nav-buttons button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-buttons button.active {
   background-color: var(--glow-color);
+  color: #fff;
 }
 .spinner {
   width: 50px;
@@ -120,7 +129,6 @@ body {
 .flip-card.is-flipped .flip-card-inner {
   transform: rotateY(180deg);
 
-  box-shadow: 0 0 20px 4px var(--glow-color);
 }
 .flip-card:hover {
   box-shadow: 0 0 20px 4px var(--glow-color);

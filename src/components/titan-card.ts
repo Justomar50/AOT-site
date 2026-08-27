@@ -20,6 +20,9 @@ const abilitiesText = titan.abilities.slice(0, 2).join(", ");
 element.addEventListener("click", () => {
   element.classList.toggle("is-flipped");
 });
+  element.addEventListener("mouseleave", () => {
+  element.classList.remove("is-flipped");
+});
   return element;
     
 }
